@@ -1,0 +1,256 @@
+body{
+    position:absolute;
+    padding:0;
+    margin:0;
+    width:100%;
+    height:auto;
+	font-family:Arial;
+	color:#2d2d2f;
+    background-size: 105%;
+    text-align:center;
+    
+}
+h2{
+	font-size: 48px;
+    font-family:Arial Black;
+}
+h3{
+    font-size: 32px;
+    font-family:Arial Black; 
+    color:#ff8000;
+}
+p{
+    font-size:24px;
+}
+hr{
+    border: none;
+    height: 3px;
+    background: linear-gradient(35deg, #008fed, #ff8000);
+}
+.title.element-animation{
+    padding: 1%;
+    font-size: 22px;
+    font-weight: bolder;
+    font-family:Arial Black;
+    opacity: 0;
+    transform: translateY(20px);
+}
+.title.element-animation.element-show{
+    opacity: 1;
+    transition: all 1.5s;
+    transform: translateY(0%);
+}
+.glitch{
+    text-transform: uppercase;
+    animation: animate 0.85s infinite;
+    animation-timing-function: linear;
+}
+.logo{
+    padding-top:2%;
+    text-align: center;
+    position:relative;
+}
+.container{
+width:1150px;
+margin-left: 360px;
+margin-right: 360px;
+ position:relative;
+}
+.part1.element-animation /*блок "кто такой тестировщик программного обеспечения"*/ {
+    position:relative;
+    background:url(img/bg.png);
+    background-size: 150%;
+    color:white;
+    width:800px;
+    height:550px;
+    text-align:left;
+    padding:1%;
+    margin-top: 100px;
+    transform: rotate3d(2, -1, 0, 30deg);
+    border-radius: 5px;
+    opacity: 0;
+    transform:translateX(-200px);
+}
+.part1.element-animation.element-show{
+    opacity: 1;
+    transition: all 1.5s;;
+    transform: rotate3d(2, -1, 0, 30deg);
+}
+.part2.element-animation /*блок "какие навыки требуются QA"*/ {
+    color:white;
+    position:relative;
+    background:url(img/bg2V3.png);
+    background-size: 110%;
+    width:800px;
+    height:425px;
+    text-align:right;
+    margin-left:360px;
+    padding:1%;
+    margin-top:100px;
+    margin-bottom:100px;
+    transform: rotate3d(1, 1, 0, 30deg);
+    border-radius: 5px;
+    opacity: 0;
+    transform:translateX(200px);
+}
+.part2.element-animation.element-show{
+    opacity: 1;
+    transition: all 1.5s;;
+    transform: rotate3d(1, 1, 0, 30deg);
+}
+.prepart3.element-animation{
+    opacity: 0;
+    transform: translateY(20px);  
+}
+.prepart3.element-animation.element-show{
+    opacity: 1;
+    transition: all 1.5s;
+    transform: translateY(0%); 
+}
+.part3 /*блок про направления в QA*/{
+    padding:2.5%;
+    background-color: white;
+    position:relative;
+    text-align:left;
+    margin-top:70px;
+    margin-bottom:100px;
+    box-shadow: 0 0 10px -1px;
+    border-radius: 15px;
+}
+@keyframes animate /*эффект "глича"*/ {
+    0% {
+        text-shadow: 1px 1px  #ff8000;
+        color:#2c3337;
+    }
+    25% {
+        text-shadow: -1px -0.5px #008fed;
+    }
+    50% {
+        text-shadow: 3px 1px whitesmoke;
+    }
+    75% {
+        text-shadow: -3px -1px   #FFFFE0;
+    }
+    100% {
+        text-shadow: 3px 1px  #ff9900;
+    }
+}
+.upward /*кнопка*/ {
+    position: fixed;
+    bottom:700px;
+    right:60px;
+    width:80px;
+    height:180px;
+    background: url(img/upbutton.png);
+    background-size: cover;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+    transition: 0.5s;
+}
+.upward.active{
+    bottom:40px;
+    visibility: visible;
+    opacity: 1;
+}
+.coin_icon.element-animation{
+    position:absolute;
+    height:100px;
+    width:100px;
+    margin-left:-25px;
+    margin-top:-10px;
+    opacity: 0;
+    transform: translateY(-15px);
+}
+.coin_icon.element-animation.element-show{
+    opacity: 1;
+    transition: all 1s;
+    transform: translateY(0%);   
+}
+.section-g {
+  height: 871px;
+position: relative;
+box-shadow: 0 0 10px -1px;
+}
+.content-g {
+  width: 1280px/1366px * 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+}
+.slider{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;    
+}
+.middle{
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+.navigation{
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+.bar{
+    height: 8px;
+    width: 30px;
+    margin: 6px;
+    cursor: pointer;
+    background-color: #ff8000;
+    opacity: .5;
+    border-radius: 10px;
+    transition: all .4s ease;
+}
+.bar:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+input[name="r"] {
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides{
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+.slide{
+    width: 25%;
+    transition: all .6s ease;   
+}
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+
+#r1:checked ~ .s1 {
+    margin-left: 0;
+}
+
+#r2:checked ~ .s1 {
+    margin-left: -25%;
+}
+
+#r3:checked ~ .s1 {
+    margin-left: -50%;
+}
+
+#r4:checked ~ .s1 {
+    margin-left: -75%;
+}
+
+
+.link{
+    text-decoration: none;
+    font-family:Arial Black; 
+    color:#ff8000;
+}
+.link:hover{
+  color:#ffa033;  
+}

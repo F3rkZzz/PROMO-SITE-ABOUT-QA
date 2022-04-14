@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+        <link rel="shortcut icon" type="image\x.icon" href="img/favicon.ico">
+        <meta name="description" content="О профессии тестировщика ПО">
+        <meta name="keywords" content="IT, программирование, Java тестирование, направления в тестировании, профессия тестировщика ПО, профессия будущего">
+        <title>О профессии тестировщика ПО</title>
+    </head>
+    <body background="img/bg.svg" class="container" align="center">
+       <div class="upward" onClick="scrollTopTop()"></div>
+        <header>
+            <script src="button.js"></script>
+            <div class="title element-animation">
+            <div class="logo">
+                <img src="img/logo.png">
+            </div>
+                <p>Профессия <spam class="glitch">тестировщика ПО</spam> — одна из самых динамичных в IT индустрии.<br> Технологии и инструменты тестирования стремительно развиваются, и хороший специалист, готовый следить за свежими тенденциями, никогда не останется без работы.</p>
+            </div>
+        </header>
+        <div class="part1 element-animation">
+            <h2>Кто такой тестировщик программного обеспечения</h2>
+            <p>Тестировщик ПО — это человек, проверяющий программное обеспечение на предмет дефектов.<br> Обнаруженные ошибки в последующем исправляются, но уже другим специалистом.<br></p>
+            <p>После тестирования специалист готовит отчёт и передаёт его разработчикам для работы над ошибками.
+            Профессия появилась не так давно, но по мере роста рынка IT она становится всё популярнее.<br> Любому digital-проекту нужно пройти несколько этапов проверки для того, чтобы потребитель получил готовый к использованию интерфейс.
+            </p>
+        </div>
+        <div class="part2 element-animation">
+            <h2>Какие навыки требуются QA</h2>
+            <p>Чтобы стать QA, нужно понимать цикл разработки ПО, изучить теорию и основные инструменты тестирования, иметь хороший уровень английского. Желательно изучить HTML, CSS, JavaScript, SQL и Java – на базовом уровне.<br><br> Также необходимо иметь широкий ИТ-кругозор, быть внимательным к деталям, обладать аналитическими способностями, уметь моделировать и работать с абстракциями.</p>
+        </div>
+        <div class="prepart3 element-animation">
+        <h2>Профессия тестировщика ПО подразделяется на следующие категории:</h2>
+        </div>
+        <div class="part3">
+            <img src="img/QAE.png">
+            <p>Это тот самый специалист, который первым приходит в голову, когда речь идёт о тестировщиках. <br>Он ищет баги и ошибки, составляет списки обнаруженных проблем, чтобы разработчики могли их исправить, и проверяет, соответствует ли продукт разработки требованиям.<br> При этом <b>QA Engineer никогда не занимается исправлением ошибок — только сообщает, что необходимо изменить и улучшить.</b></p>
+            <hr>
+            <img src="img/QATA.png">
+            <p>Специалист по документации проекта решает, что и как проверять. Он в точности знает, как должен работать проект. Систематизирует информацию, чтобы простым тестерам было проще работать с проектом.</p>
+            <hr>
+            <img src="img/QAA.png">
+            <p>Архитектор тестов отличается системным подходом: он прорабатывает архитектуру тестирования, по которой работают прочие QA.</p>
+            <hr>
+            <img src="img/QATM.png">
+            <p>Менеджер по обеспечению качества — человек, который в первую очередь управляет процессами.<br>Он организовывает и обеспечивает тестирование ПО, общаясь с командой и каждым её членом.<br> Все описанные выше специалисты находятся в прямом подчинении менеджера по обеспечению качества.</p>
+            <hr>
+            <img src="img/QATL.png">
+            <p>Как следует из названия, это лидер. Он может принимать участие во всём, но основная его роль — полный контроль над процессами тестирования, набор новых специалистов и решение управленческих задач.<br><br> Тимлиду чаще требуются мягкие, а не технические навыки, хотя он обладает всеми компетенциями прочих специалистов.</p>
+        </div>
+        <h2>Пр<img src="img/cash.png" class="coin_icon element-animation">&ensp;&ensp;&ensp;зарплаты тестировщиков</h2>
+        <section class="section-g">
+      <div class="content-g">
+        <div class="slider middle">
+          <div class="slides">
+            <input type="radio" name="r" id="r1" checked />
+            <input type="radio" name="r" id="r2" />
+            <input type="radio" name="r" id="r3" />
+            <input type="radio" name="r" id="r4" />
+
+            <div class="slide s1"><img src="img/analitic.png" alt="" /></div>
+            <div class="slide"><img src="img/analitic2.png" alt="" /></div>
+            <div class="slide"><img src="img/analitic3.png" alt="" /></div>
+            <div class="slide"><img src="img/analitic4.png" alt="" /></div>
+          </div>
+          <div class="navigation">
+            <label for="r1" class="bar"></label>
+            <label for="r2" class="bar"></label>
+            <label for="r3" class="bar"></label>
+            <label for="r4" class="bar"></label>
+          </div>
+        </div>
+      </div>
+    </section>
+        <p>Данные насчет зарплат взяты с сайта- <a href="https://www.trud.com" target="_blank" class="link">trud</a></p>
+        <!-- Скрипт с анимацией появления при скролле страницы -->
+        <script>
+            function onEntry(entry) {
+              entry.forEach(change => {
+                if (change.isIntersecting) {
+                 change.target.classList.add('element-show');
+                }
+              });
+            }
+            let options = {
+              threshold: [0.5] };
+            let observer = new IntersectionObserver(onEntry, options);
+            let elements = document.querySelectorAll('.element-animation');
+
+            for (let elm of elements) {
+              observer.observe(elm);}
+            </script>
+    </body>
+</html>
